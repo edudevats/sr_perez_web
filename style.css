@@ -303,3 +303,264 @@ footer {
     height: 180px; 
   }
 }
+
+/* --- Nuevas Secciones y Mejoras --- */
+
+/* Acordeón Interactivo con Details/Summary */
+details {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+details[open] {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+summary {
+  background: #E8F7F7;
+  padding: 1.2rem 1.8rem;
+  font-family: var(--font-heading);
+  color: var(--teal);
+  font-size: 1.25rem;
+  cursor: pointer;
+  outline: none;
+  list-style: none; /* Ocultar flecha estándar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+summary::-webkit-details-marker {
+  display: none; /* Ocultar flecha en Safari */
+}
+summary::after {
+  content: '➕';
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+details[open] summary::after {
+  content: '➖';
+}
+summary:hover {
+  background: #D5ECEC;
+}
+.details-content {
+  padding: 1.5rem 1.8rem;
+  color: #555;
+  line-height: 1.7;
+  border-top: 1px solid #D5ECEC;
+  background: #fff;
+}
+.details-content ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+.details-content li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.details-content li::before {
+  content: '⭐';
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* Grilla de Imágenes Neurodivergentes */
+.neuro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.neuro-images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+.neuro-images-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.neuro-images-grid img.neuro-large {
+  grid-column: span 2;
+  height: 260px;
+}
+.neuro-images-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Grilla de Beneficios del Club */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+.benefit-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.benefit-img-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.benefit-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.benefit-card:hover .benefit-img-container img {
+  transform: scale(1.06);
+}
+.benefit-info {
+  padding: 1.8rem;
+}
+.benefit-info h4 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--teal);
+  margin-bottom: 0.6rem;
+}
+.benefit-info p {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Comunidad - Juntos por más Sonrisas */
+.comunidad-intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 3.5rem auto;
+}
+.comunidad-intro p {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.instagram-btn {
+  background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+.instagram-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.6);
+}
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.campaign-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.campaign-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.campaign-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.campaign-content {
+  padding: 2.2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.campaign-badge {
+  background-color: var(--pink);
+  color: white;
+  padding: 0.35rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  align-self: flex-start;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(246, 117, 153, 0.3);
+}
+.campaign-card:nth-child(even) .campaign-badge {
+  background-color: var(--teal);
+  box-shadow: 0 2px 8px rgba(0, 163, 161, 0.3);
+}
+.campaign-content h3 {
+  font-size: 1.7rem;
+  color: var(--orange);
+  margin-bottom: 0.8rem;
+}
+.campaign-content p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.comunidad-gallery-title {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--teal);
+  margin-bottom: 2.5rem;
+}
+.comunidad-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.comunidad-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.comunidad-gallery img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo para las nuevas secciones */
+@media (max-width: 992px) {
+  .neuro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .campaigns-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
