@@ -12,6 +12,8 @@ export default defineConfig({
         servicios: resolve(__dirname, 'servicios.html'),
         padres: resolve(__dirname, 'padres.html'),
         contacto: resolve(__dirname, 'contacto.html'),
+        neurodivergentes: resolve(__dirname, 'neurodivergentes.html'),
+        club: resolve(__dirname, 'club-sonrisas-magicas.html'),
       }
     }
   }
