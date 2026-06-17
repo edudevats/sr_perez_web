@@ -1,228 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atención Neurodivergente - La Casa del Sr. Pérez</title>
-    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">
-          <img src="./public/images/logo.png" alt="Logo La Casa del Sr. Pérez" />
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atención Neurodivergente - La Casa del Sr. Pérez</title>
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./public/images/logo.png" alt="Logo La Casa del Sr. Pérez" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Especialidades</a>
+      <a href="neurodivergentes.html" class="active">Neurodivergentes</a>
+      <a href="club-sonrisas-magicas.html">Club Sonrisas</a>
+      <a href="padres.html">Para Papás</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="section bg-teal" style="text-align: center; color: white; padding: 4rem 5% 3rem 5%;">
+    <div
+      style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+      <img src="./public/images/neuro.png" alt="Logo de Odontología Neurodivergente"
+        style="height: 90px; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" />
+      <div>
+        <h1 style="color: white; margin: 0; font-size: 3rem;">Atención Neurodivergente</h1>
+        <p style="font-size: 1.3rem; max-width: 800px; margin: 0.5rem auto 0; font-family: var(--font-heading);">Un
+          espacio seguro, predecible y lleno de amor para mentes extraordinarias</p>
       </div>
-      <div class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Especialidades</a>
-        <a href="neurodivergentes.html" class="active">Neurodivergentes</a>
-        <a href="club-sonrisas-magicas.html">Club Sonrisas</a>
-        <a href="padres.html">Para Papás</a>
-        <a href="contacto.html">Contacto</a>
-      </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header class="section bg-teal" style="text-align: center; color: white; padding: 4rem 5% 3rem 5%;">
-      <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-        <img src="./public/images/neurodivergentes_logo.jpeg" alt="Logo de Odontología Neurodivergente" style="height: 90px; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" />
-        <div>
-          <h1 style="color: white; margin: 0; font-size: 3rem;">Atención Neurodivergente</h1>
-          <p style="font-size: 1.3rem; max-width: 800px; margin: 0.5rem auto 0; font-family: var(--font-heading);">Un espacio seguro, predecible y lleno de amor para mentes extraordinarias</p>
-        </div>
-      </div>
-    </header>
+  <!-- Introducción y Protocolo Sensorial -->
+  <section class="section" style="background: radial-gradient(circle at top right, #fff, #F6FBFB);">
+    <div class="neuro-grid">
+      <div>
+        <h2 style="font-size: 2.2rem; color: var(--teal); margin-bottom: 1.5rem;">Nuestro Protocolo de Adaptación Dental
+        </h2>
+        <p style="font-size: 1.15rem; color: #555; margin-bottom: 2rem; line-height: 1.8;">
+          En <strong>La Casa del Sr. Pérez</strong> entendemos que cada niño percibe y procesa el mundo a su manera. Nos
+          capacitamos continuamente para brindar una experiencia odontológica sumamente respetuosa, cálida y adaptada
+          para pacientes dentro del espectro autista (TEA), TDAH, retos de integración sensorial y alta sensibilidad.
+        </p>
 
-    <!-- Introducción y Protocolo Sensorial -->
-    <section class="section" style="background: radial-gradient(circle at top right, #fff, #F6FBFB);">
-      <div class="neuro-grid">
-        <div>
-          <h2 style="font-size: 2.2rem; color: var(--teal); margin-bottom: 1.5rem;">Nuestro Protocolo de Adaptación Dental</h2>
-          <p style="font-size: 1.15rem; color: #555; margin-bottom: 2rem; line-height: 1.8;">
-            En <strong>La Casa del Sr. Pérez</strong> entendemos que cada niño percibe y procesa el mundo a su manera. Nos capacitamos continuamente para brindar una experiencia odontológica sumamente respetuosa, cálida y adaptada para pacientes dentro del espectro autista (TEA), TDAH, retos de integración sensorial y alta sensibilidad.
-          </p>
-
-          <!-- Acordeón interactivo -->
-          <details open>
-            <summary>🩺 Cita de Familiarización Desensibilizante</summary>
-            <div class="details-content">
-              <p>Antes de cualquier tratamiento, organizamos una sesión lúdica de reconocimiento. Tu pequeño podrá explorar el consultorio, tocar los espejos de exploración y familiarizarse con el sillón dental a su propio ritmo, sin ruidos molestos ni procedimientos invasivos.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>🖼️ Predictibilidad Mediante Apoyos Visuales</summary>
-            <div class="details-content">
-              <p>La incertidumbre genera ansiedad. Por ello, diseñamos agendas con pictogramas sencillos y claros que muestran cada fase de la consulta paso a paso (sentarse, abrir la boca, cepillar, contar dientes, recibir un premio). ¡De esta forma sabrá exactamente qué pasará después!</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>🧸 Entorno y Regulación Sensorial</summary>
-            <div class="details-content">
-              <p>Modificamos el entorno adaptándonos a su perfil sensorial: atenuamos la luz del consultorio, brindamos audífonos reductores de ruido y ponemos a su disposición juguetes de regulación (fidget toys) y mantas de peso para brindarles seguridad proprioceptiva.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>❤️ Cero Prisas y Respeto Absoluto</summary>
-            <div class="details-content">
-              <p>Respetamos las señales de estrés y los tiempos de regulación del niño. Realizamos pausas frecuentes, explicamos cada paso utilizando la técnica de "decir-mostrar-hacer" y, de ser necesario, segmentamos el tratamiento en varias sesiones breves.</p>
-            </div>
-          </details>
-        </div>
-
-        <div>
-          <h3 class="comunidad-gallery-title" style="text-align: left; font-size: 1.6rem; margin-bottom: 1.5rem;">Galería de Experiencia</h3>
-          <p style="font-size: 1rem; color: #666; margin-bottom: 1.5rem;">Haz clic en cualquiera de las fotos para verlas en tamaño grande y conocer nuestro consultorio sensorial.</p>
-          <div class="neuro-images-grid">
-            <img src="./public/images/neurodivergentes_1.jpeg" alt="Sesión de familiarización: Paciente conociendo los instrumentos en un ambiente de juego y empatía." class="neuro-large clickable-image" />
-            <img src="./public/images/neurodivergentes_2.jpeg" alt="Espacio sensorialmente amigable: Consultorio adaptado con luces suaves y apoyos visuales para mayor comodidad." class="clickable-image" />
-            <img src="./public/images/neurodivergentes_3.jpeg" alt="Paciente feliz: Logrando una sonrisa sana y una experiencia de consulta positiva." class="clickable-image" />
+        <!-- Acordeón interactivo -->
+        <details open>
+          <summary>🩺 Cita de Familiarización Desensibilizante</summary>
+          <div class="details-content">
+            <p>Antes de cualquier tratamiento, organizamos una sesión lúdica de reconocimiento. Tu pequeño podrá
+              explorar el consultorio, tocar los espejos de exploración y familiarizarse con el sillón dental a su
+              propio ritmo, sin ruidos molestos ni procedimientos invasivos.</p>
           </div>
+        </details>
+
+        <details>
+          <summary>🖼️ Predictibilidad Mediante Apoyos Visuales</summary>
+          <div class="details-content">
+            <p>La incertidumbre genera ansiedad. Por ello, diseñamos agendas con pictogramas sencillos y claros que
+              muestran cada fase de la consulta paso a paso (sentarse, abrir la boca, cepillar, contar dientes, recibir
+              un premio). ¡De esta forma sabrá exactamente qué pasará después!</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>🧸 Entorno y Regulación Sensorial</summary>
+          <div class="details-content">
+            <p>Modificamos el entorno adaptándonos a su perfil sensorial: atenuamos la luz del consultorio, brindamos
+              audífonos reductores de ruido y ponemos a su disposición juguetes de regulación (fidget toys) y mantas de
+              peso para brindarles seguridad proprioceptiva.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>❤️ Cero Prisas y Respeto Absoluto</summary>
+          <div class="details-content">
+            <p>Respetamos las señales de estrés y los tiempos de regulación del niño. Realizamos pausas frecuentes,
+              explicamos cada paso utilizando la técnica de "decir-mostrar-hacer" y, de ser necesario, segmentamos el
+              tratamiento en varias sesiones breves.</p>
+          </div>
+        </details>
+      </div>
+
+      <div>
+        <h3 class="comunidad-gallery-title" style="text-align: left; font-size: 1.6rem; margin-bottom: 1.5rem;">Galería
+          de Experiencia</h3>
+        <p style="font-size: 1rem; color: #666; margin-bottom: 1.5rem;">Haz clic en cualquiera de las fotos para verlas
+          en tamaño grande y conocer nuestro consultorio sensorial.</p>
+        <div class="neuro-images-grid">
+          <img src="./public/images/neurodivergentes_1.jpeg"
+            alt="Sesión de familiarización: Paciente conociendo los instrumentos en un ambiente de juego y empatía."
+            class="neuro-large clickable-image" />
+          <img src="./public/images/neurodivergentes_2.jpeg"
+            alt="Espacio sensorialmente amigable: Consultorio adaptado con luces suaves y apoyos visuales para mayor comodidad."
+            class="clickable-image" />
+          <img src="./public/images/neurodivergentes_3.jpeg"
+            alt="Paciente feliz: Logrando una sonrisa sana y una experiencia de consulta positiva."
+            class="clickable-image" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Cómo prepararse en casa -->
-    <section class="section" style="background-color: #FFFDF0; border-top: 2px dashed var(--yellow); border-bottom: 2px dashed var(--yellow);">
-      <h2 class="section-title" style="color: var(--orange);">Consejos para Preparar la Cita en Casa</h2>
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon">📖</div>
-          <h3 style="color: var(--teal);">Historias Sociales</h3>
-          <p>Léanle un cuento sobre ir al dentista. Utiliza lenguaje positivo y descriptivo de lo que verá y escuchará allí.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🪥</div>
-          <h3 style="color: var(--teal);">Juego de Roles</h3>
-          <p>Jueguen en casa a ser el dentista y el paciente. Cuenten sus dientes mutuamente con una lamparita pequeña.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔄</div>
-          <h3 style="color: var(--teal);">Anticipación</h3>
-          <p>Menciónale la cita con algunos días de anticipación de forma tranquila. Evita usar la cita como una amenaza.</p>
-        </div>
+  <!-- Cómo prepararse en casa -->
+  <section class="section"
+    style="background-color: #FFFDF0; border-top: 2px dashed var(--yellow); border-bottom: 2px dashed var(--yellow);">
+    <h2 class="section-title" style="color: var(--orange);">Consejos para Preparar la Cita en Casa</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">📖</div>
+        <h3 style="color: var(--teal);">Historias Sociales</h3>
+        <p>Léanle un cuento sobre ir al dentista. Utiliza lenguaje positivo y descriptivo de lo que verá y escuchará
+          allí.</p>
       </div>
-    </section>
-
-    <!-- WhatsApp CTA -->
-    <section class="section" style="text-align: center;">
-      <h2 class="section-title" style="color: var(--pink);">¿Quieres agendar una Cita Adaptada?</h2>
-      <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 2.5rem; line-height: 1.7;">
-        Escríbenos por WhatsApp para contarnos las necesidades específicas de procesamiento sensorial o comunicación de tu pequeño. Diseñaremos una estrategia a su medida antes de que ponga un pie en la clínica.
-      </p>
-      <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-        <a href="https://wa.me/message/YOUR_WHATSAPP_LINK" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;" target="_blank">
-          📅 Agendar Cita de Familiarización
-        </a>
-        <a href="contacto.html" class="btn btn-secondary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">
-          📍 Ver Ubicación de la Clínica
-        </a>
+      <div class="card">
+        <div class="card-icon">🪥</div>
+        <h3 style="color: var(--teal);">Juego de Roles</h3>
+        <p>Jueguen en casa a ser el dentista y el paciente. Cuenten sus dientes mutuamente con una lamparita pequeña.
+        </p>
       </div>
-    </section>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3 style="color: var(--teal);">Anticipación</h3>
+        <p>Menciónale la cita con algunos días de anticipación de forma tranquila. Evita usar la cita como una amenaza.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 La Casa del Sr. Pérez. Todos los derechos reservados.</p>
-    </footer>
+  <!-- WhatsApp CTA -->
+  <section class="section" style="text-align: center;">
+    <h2 class="section-title" style="color: var(--pink);">¿Quieres agendar una Cita Adaptada?</h2>
+    <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 2.5rem; line-height: 1.7;">
+      Escríbenos por WhatsApp para contarnos las necesidades específicas de procesamiento sensorial o comunicación de tu
+      pequeño. Diseñaremos una estrategia a su medida antes de que ponga un pie en la clínica.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="https://wa.me/message/YOUR_WHATSAPP_LINK" class="btn btn-primary"
+        style="font-size: 1.2rem; padding: 1rem 2.5rem;" target="_blank">
+        📅 Agendar Cita de Familiarización
+      </a>
+      <a href="contacto.html" class="btn btn-secondary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">
+        📍 Ver Ubicación de la Clínica
+      </a>
+    </div>
+  </section>
 
-    <script>
-      // Lógica General de la Aplicación
-      document.addEventListener('DOMContentLoaded', () => {
-        // --- Lógica del Carrusel (Solo si existe en la página) ---
-        const track = document.getElementById('carouselTrack');
-        if (track) {
-          const slides = Array.from(track.children);
-          const slideCount = slides.length;
-          let currentIndex = 0;
-          
-          function moveToNextSlide() {
-            currentIndex++;
-            if (currentIndex >= slideCount) {
-              currentIndex = 0;
-            }
-            track.style.transform = `translateX(-${(currentIndex * 100) / slideCount}%)`;
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 La Casa del Sr. Pérez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Lógica General de la Aplicación
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- Lógica del Carrusel (Solo si existe en la página) ---
+      const track = document.getElementById('carouselTrack');
+      if (track) {
+        const slides = Array.from(track.children);
+        const slideCount = slides.length;
+        let currentIndex = 0;
+
+        function moveToNextSlide() {
+          currentIndex++;
+          if (currentIndex >= slideCount) {
+            currentIndex = 0;
           }
-          
-          // Auto-scroll cada 3 segundos
-          setInterval(moveToNextSlide, 3000);
+          track.style.transform = `translateX(-${(currentIndex * 100) / slideCount}%)`;
         }
 
-        // --- Lógica del Lightbox (Popup de Imágenes Ampliables) ---
-        // 1. Inyectar dinámicamente la estructura del lightbox al final del body
-        const lightboxHTML = `
+        // Auto-scroll cada 3 segundos
+        setInterval(moveToNextSlide, 3000);
+      }
+
+      // --- Lógica del Lightbox (Popup de Imágenes Ampliables) ---
+      // 1. Inyectar dinámicamente la estructura del lightbox al final del body
+      const lightboxHTML = `
           <div id="globalLightbox" class="lightbox-modal">
             <span class="lightbox-close" id="lightboxClose">&times;</span>
             <img class="lightbox-content" id="lightboxImage" src="" alt="">
             <div class="lightbox-caption" id="lightboxCaption"></div>
           </div>
         `;
-        document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+      document.body.insertAdjacentHTML('beforeend', lightboxHTML);
 
-        const lightbox = document.getElementById('globalLightbox');
-        const lightboxImg = document.getElementById('lightboxImage');
-        const lightboxCaption = document.getElementById('lightboxCaption');
-        const lightboxClose = document.getElementById('lightboxClose');
+      const lightbox = document.getElementById('globalLightbox');
+      const lightboxImg = document.getElementById('lightboxImage');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
 
-        if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
-          
-          // 2. Abrir Lightbox
-          function openLightbox(src, alt) {
-            lightboxImg.src = src;
-            lightboxImg.alt = alt || '';
-            lightboxCaption.textContent = alt || 'Galería de La Casa del Sr. Pérez';
-            
-            lightbox.style.display = 'flex';
-            // Reflow para activar animación CSS
-            lightbox.offsetHeight;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Detener scroll de la página de fondo
-          }
+      if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
 
-          // 3. Cerrar Lightbox
-          function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = ''; // Restaurar scroll
-            
-            // Esperar la transición de CSS (300ms) antes de ocultar el display
-            setTimeout(() => {
-              if (!lightbox.classList.contains('active')) {
-                lightbox.style.display = 'none';
-                lightboxImg.src = '';
-              }
-            }, 300);
-          }
+        // 2. Abrir Lightbox
+        function openLightbox(src, alt) {
+          lightboxImg.src = src;
+          lightboxImg.alt = alt || '';
+          lightboxCaption.textContent = alt || 'Galería de La Casa del Sr. Pérez';
 
-          // 4. Delegación de eventos en body para capturar imágenes cliqueables
-          document.body.addEventListener('click', (e) => {
-            const clickedImg = e.target.closest('.clickable-image');
-            if (clickedImg && clickedImg.tagName === 'IMG') {
-              openLightbox(clickedImg.src, clickedImg.alt);
-            }
-          });
-
-          // 5. Cerrar al pulsar el botón ✖
-          lightboxClose.addEventListener('click', closeLightbox);
-
-          // 6. Cerrar al hacer clic en el fondo difuminado
-          lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-              closeLightbox();
-            }
-          });
-
-          // 7. Cerrar al pulsar la tecla Escape (Accesibilidad)
-          document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-              closeLightbox();
-            }
-          });
+          lightbox.style.display = 'flex';
+          // Reflow para activar animación CSS
+          lightbox.offsetHeight;
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Detener scroll de la página de fondo
         }
-      });
-    </script>
-  </body>
+
+        // 3. Cerrar Lightbox
+        function closeLightbox() {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = ''; // Restaurar scroll
+
+          // Esperar la transición de CSS (300ms) antes de ocultar el display
+          setTimeout(() => {
+            if (!lightbox.classList.contains('active')) {
+              lightbox.style.display = 'none';
+              lightboxImg.src = '';
+            }
+          }, 300);
+        }
+
+        // 4. Delegación de eventos en body para capturar imágenes cliqueables
+        document.body.addEventListener('click', (e) => {
+          const clickedImg = e.target.closest('.clickable-image');
+          if (clickedImg && clickedImg.tagName === 'IMG') {
+            openLightbox(clickedImg.src, clickedImg.alt);
+          }
+        });
+
+        // 5. Cerrar al pulsar el botón ✖
+        lightboxClose.addEventListener('click', closeLightbox);
+
+        // 6. Cerrar al hacer clic en el fondo difuminado
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) {
+            closeLightbox();
+          }
+        });
+
+        // 7. Cerrar al pulsar la tecla Escape (Accesibilidad)
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>
